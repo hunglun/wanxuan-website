@@ -12,7 +12,7 @@ const LocationTimeline = ({ locations }) => {
        
          <VerticalTimelineElement
          contentStyle={{ background: location.background, color: '#fff' }}
-         contentArrowStyle={{ borderRight: '7px solid  #3498db' }}
+         contentArrowStyle={{ borderRight: '7px solid  ' + location.background }}
          date={location.date}
          iconStyle={{ background: location.background, color: '#fff' }}
          icon={<i className={location.className} />}
