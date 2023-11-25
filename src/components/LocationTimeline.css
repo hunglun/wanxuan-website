@@ -1,0 +1,53 @@
+/* LocationTimeline.css */
+.timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .timeline-item {
+    position: relative;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+  }
+  
+  .timeline-item::before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: #3498db;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    position: absolute;
+    left: -6px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .timeline-item::after {
+    content: '';
+    width: 2px;
+    background-color: #3498db;
+    position: absolute;
+    left: 1px; /* Adjust as needed */
+    top: 0;
+    bottom: 0;
+    margin: auto; /* Center the line vertically */
+  }
+  
+  .timeline-item:last-child::after {
+    height: 50%;
+  }
+  
+  .timeline-item:first-child::after {
+    height: 50%;
+    top: 50%;
+  }
+  
+  .timeline-item:nth-child(even)::before,
+  .timeline-item:nth-child(even)::after {
+    background-color: #3498db;
+  }
+  

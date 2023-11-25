@@ -1,0 +1,61 @@
+/* Profile.css */
+
+.profile-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #4a90e2; /* Penguin-themed blue color */
+    border-radius: 8px;
+    background-color: #f0f8ff; /* Light blue background */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .profile-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .profile-photo {
+    border-radius: 50%;
+    margin-right: 20px;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+  }
+  
+  .Profile-pic {
+    width: 100%; /* Adjust the width as needed */
+    height: auto; /* Automatically adjust the height to maintain aspect ratio */
+    max-height: 400px; /* Adjust the max height as needed */
+    object-fit: contain; /* Adjust the object-fit property based on your preference */
+    border-radius: 8px; /* Add border-radius if you want rounded corners */
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    color: #333;
+  }
+  
+  p {
+    color: #555;
+  }
+  
+  .skills-container {
+    margin-top: 20px;
+  }
+  
+  h3 {
+    color: #333;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 8px;
+    color: #666;
+  }
+  
