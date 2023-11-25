@@ -20,7 +20,7 @@ const LocationTimeline = ({ locations }) => {
          icon={<i className={location.className} />}
          link={location.url}
        >
-        <a href={location.url}>  <h3 className="vertical-timeline-element-title">{index + 1} {location.name}</h3>
+        <a href={location.url} target='_blank'>  <h3 className="vertical-timeline-element-title">{index + 1} {location.name}</h3>
         </a>
         
          <p>
