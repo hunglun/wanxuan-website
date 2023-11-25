@@ -4,16 +4,19 @@ import React from 'react';
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 
+const color1 = '#2ecc71'
+const color2 = '#3498db'
 const LocationTimeline = ({ locations }) => {
   return (
     <VerticalTimeline>
     <div className="timeline">
       {locations.map((location, index) => (
-       
+        
+          
          <VerticalTimelineElement
-         contentStyle={{ background: location.background, color: '#fff' }}
-         contentArrowStyle={{ borderRight: '7px solid  ' + location.background }}
-         iconStyle={{ background: location.background, color: '#fff' }}
+         contentStyle={{ background: (index % 2 === 0 ) ? color2 : color1, color: '#fff' }}
+         contentArrowStyle={{ borderRight: '7px solid  ' + (index % 2 === 0 ) ? color2 : color1 }}
+         iconStyle={{ background: (index % 2 === 0 ) ? color2 : color1, color: '#fff' }}
          icon={<i className={location.className} />}
          link={location.url}
        >
