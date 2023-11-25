@@ -13,14 +13,19 @@ const LocationTimeline = ({ locations }) => {
          <VerticalTimelineElement
          contentStyle={{ background: location.background, color: '#fff' }}
          contentArrowStyle={{ borderRight: '7px solid  ' + location.background }}
-         date={location.date}
          iconStyle={{ background: location.background, color: '#fff' }}
          icon={<i className={location.className} />}
+         link={location.url}
        >
-         <h3 className="vertical-timeline-element-title">{index + 1} {location.name}</h3>
+        <a href={location.url}>  <h3 className="vertical-timeline-element-title">{index + 1} {location.name}</h3>
+        </a>
+        
          <p>
          {location.date}
          </p>
+         <p>待定</p>
+         
+         
          </VerticalTimelineElement>
    
       ))}
