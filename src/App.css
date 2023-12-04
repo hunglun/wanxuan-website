@@ -47,3 +47,35 @@
 .portfolio-item {
   margin-bottom: 20px;
 }
+
+/* Header Styles */
+header {
+  background-color: #007bff; /* Blue background */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .brand-name {
+  font-size: 24px;
+  color: #fff; /* White color for brand name */
+}
+
+header nav {
+  display: flex; /* Aligns nav items in a row */
+  list-style: none; /* Removes list dots */
+  padding: 10; /* Resets padding */
+}
+
+header nav a {
+  margin: 0 15px; /* Spacing between nav items */
+  text-decoration: none;
+  color: #fff; /* White color for nav items */
+  font-weight: 500;
+}
+
+header nav a:hover {
+  color: #cce5ff; /* Lighter blue for hover state */
+}
