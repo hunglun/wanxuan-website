@@ -6,10 +6,14 @@ import SingaporeLocationTimeline from './components/SingaporeLocationTimeline';
 import SingaporeLocationMap from './components/SingaporeLocationMap';
 import Header from './components/Header'
 import Footer from './components/Footer'
+import Services from './components/Services'
+import HeroSection from './components/HeroSection';
 function App() {
   return (
     <div className="App">
       <Header />
+      <HeroSection />
+      <Services />
       <Footer />
       <div style={{ display: 'none' }}>
         <SingaporeLocationMap />
