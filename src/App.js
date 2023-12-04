@@ -5,10 +5,12 @@ import PortfolioSection from './components/PortfolioSection'; // Import the Port
 import SingaporeLocationTimeline from './components/SingaporeLocationTimeline';
 import SingaporeLocationMap from './components/SingaporeLocationMap';
 import Header from './components/Header'
+import Footer from './components/Footer'
 function App() {
   return (
     <div className="App">
       <Header />
+      <Footer />
       <div style={{ display: 'none' }}>
         <SingaporeLocationMap />
         <SingaporeLocationTimeline />
