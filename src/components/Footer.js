@@ -1,9 +1,11 @@
 import React from 'react';
 
 function Footer() {
+  const currentYear = new Date().getFullYear(); // Gets the current year
+
   return (
     <footer>
-      <p>© 2023 婉煊教育</p>
+      <p>© {currentYear} 婉煊教育</p>
       <p>Contact Us: admin@wanxuaneducation.com</p>
     </footer>
   );

@@ -1,0 +1,7 @@
+/* Image styling within the Carousel */
+img {
+    width: 100%; /* Ensures the image takes full width of the Carousel */
+    height: auto; /* Keeps the image aspect ratio intact */
+    max-height: 250px; /* You can adjust this based on your preference */
+    object-fit: cover; /* Ensures the image covers the area, might crop some parts */
+  }
