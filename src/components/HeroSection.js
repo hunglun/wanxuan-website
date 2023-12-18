@@ -3,22 +3,32 @@ import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // Import carousel CSS
 
 import './HeroSection.css';
-import pic from '../assets/profile_pic.jpeg';
+import hindutemple from '../assets/hindu-temple-performance-1mb.jpg';
+import skatepark from '../assets/skateboard-park.jpg'
+import riflerangepark from '../assets/rifle-range-park.jpeg'
 function HeroSection() {
   return (
     <div className="hero-section">
-       <Carousel showArrows={true} autoPlay={true} infiniteLoop={true}>
+       <Carousel 
+         interval={3000} // Images will change every 3000 milliseconds (3 seconds)
+         showThumbs={false}
+         showArrows={true} autoPlay={true} infiniteLoop={true}>
           <div>
-            <img src={pic} alt="Children in Educational Activity" />
+            <img src={hindutemple} alt="Performance in Hindu Temple" />
           </div>
           <div>
-            <img src={pic} alt="Children Enjoying Singapore Trip" />
+            <img src={skatepark} alt="Lakeside Skateboard Park" />
           </div>
+          <div>
+            <img src={riflerangepark} alt="Rifle Range Park" />
+          </div>
+          
           {/* Add more images as needed */}
         </Carousel>
-        <h1>Explore, Learn, and Grow with Our Unique Educational Adventures!</h1>
-        <h2>Enriching Journeys for 6-12 Year Olds</h2>
-      
+        <h1>探索，学习，在我们独特的教育冒险中成长！</h1>
+        <h2>为6-12岁儿童提供丰富的海外旅程</h2>  
+        
+        <div className="call-us"><a href="tel:+6596757690" className="call-button">今天就开始您孩子的冒险吧！ </a></div>
     </div>
   );
 }
