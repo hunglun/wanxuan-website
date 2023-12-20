@@ -68,14 +68,14 @@ header nav {
   padding: 10;
 }
 
-header nav a {
+header nav li {
   margin: 0 15px;
   text-decoration: none;
   color: #ffffff; /* Soft White */
   font-weight: 500;
 }
 
-header nav a:hover {
+header nav li:hover {
   color: #a8dadc; /* Pale Cyan */
 }
 
