@@ -1,0 +1,32 @@
+.image-container {
+    position: relative;
+    width: /* specify width or use auto */;
+    height: auto; /* or specify height */
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block; /* removes any space below the image */
+}
+
+.overlay-text {
+    position: absolute;
+    top: 80%;  /* position the top edge of the element at the middle of the parent */
+    left: 50%; /* position the left edge of the element at the middle of the parent */
+    transform: translate(-50%, -50%); /* shift the element back by half its own width and height */
+    /* color: white; text color */
+    /* font-size: 100px; text size */
+    /* additional styling */
+}
+
+.image-container a {
+    padding: 10px 20px;
+    background-color: #f4a261; /* Sandy Orange */
+    color: white;
+    border: 1px solid #e76f51; /* Burnt Sienna border */
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 30px;
+    text-decoration: none;
+}
