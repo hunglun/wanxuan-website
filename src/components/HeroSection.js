@@ -28,7 +28,7 @@ function HeroSection() {
         <h1>探索，学习，在我们独特的教育冒险中成长！</h1>
         <h2>为6-12岁儿童提供丰富的海外旅程</h2>  
         
-        <div className="call-us"><a href="tel:+6596757690" className="call-button">今天就开始您孩子的冒险吧！ </a></div>
+        <div className="call-us"><a href="mailto:admin@wanxuaneducation.com" className="call-button">今天就开始您孩子的冒险吧！ </a></div>
     </div>
   );
 }
