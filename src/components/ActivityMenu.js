@@ -5,7 +5,7 @@ import './ActivityMenu.css';
 function ActivityMenu() {
   return (
     <div>
-      <h1>活动菜单</h1>
+      <h1>游学活动菜单</h1>
       <ul>
         {attractions.map((attraction, index) => (
           <li key={index}>
