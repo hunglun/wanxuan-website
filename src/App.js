@@ -12,17 +12,17 @@ import ActivityMenu  from './components/ActivityMenu';
 import  { useState } from 'react';
 function App() {
 // Create a boolean state with default value as true or false, as you prefer
-const [showActivityMenu, setShowActivityMenu] = useState(false);
+const [selectedPage, setSelectedPage] = useState(0);
 
   return (
     <div className="App">
     {/* Pass the state-modifying function to Header */}
-    <Header home={() => setShowActivityMenu(false)} toggleActivityMenu={() => setShowActivityMenu(!showActivityMenu)} />
+    <Header selectPage={(n) => setSelectedPage(n)} />
 
     {/* Conditionally render ActivityMenu based on the state */}
-      {showActivityMenu && <ActivityMenu />}
+      {selectedPage === 1 && <ActivityMenu />}
    
-      {!showActivityMenu && <HeroSection />}
+      {selectedPage === 0 && <HeroSection />}
       <Footer />
       <div style={{ display: 'none' }}>
         <SingaporeLocationMap />

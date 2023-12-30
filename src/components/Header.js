@@ -1,13 +1,16 @@
 import React from 'react';
 
-function Header(  {home, toggleActivityMenu }) {
+function Header(  { selectPage }) {
   return (
     <header>
       <div className="brand-name">婉煊教育</div>
       <nav>
-        <li onClick={home}>首页</li>
+        <li onClick={() => selectPage(0)}>首页</li>
         {/* Attach the onClick event handler to this li */}
-        <li onClick={toggleActivityMenu}>活动菜单</li>
+        <li onClick={() => selectPage(3)}>留学</li>
+        <li onClick={() => selectPage(2)}>兴趣班</li>
+        <li onClick={() => selectPage(1)}>游学活动</li>
+  
       </nav>
     </header>
   );
